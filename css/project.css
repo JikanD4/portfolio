@@ -1,0 +1,87 @@
+/* CSS de la section project */
+
+.projets {
+    background: var(--second-bg-color);  
+}
+
+.projets h2 {
+    margin-bottom: 4rem;
+    margin-top: 6rem;
+}
+
+.projets-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.projets-container .projets-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.projets-box img {
+    width: 100%;
+    height: 300px; /* Augmentation de la hauteur à 300px */
+    object-fit: cover; /* Maintien du ratio d'aspect */
+    transition: .5s ease;
+}
+
+.projets-box:hover img {
+    transform: scale(1.1);
+}
+
+.projets-box .projets-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.356), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.projets-box:hover .projets-layer {
+    transform: translateY(0);
+}
+
+.projets-layer h4 {
+    font-size: 3rem;
+    color: var(--bg-color);
+}
+
+.projets-layer p {
+    font-size: 1.8rem;
+    margin: .3rem 0 1rem;
+    color: var(--bg-color);
+}
+
+.projets-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--bg-color);
+    border-radius: 50%;
+}
+
+.projets-layer a {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.projets-layer a i {
+    color: var(--main-color);
+}

@@ -1,0 +1,42 @@
+/* CSS de la section profil */
+
+.profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(to right, var(--second-bg-color), var(--bg-color));
+}
+
+
+.profil-img img{
+    width: 25vw;
+    margin-left: 60px;
+    border-radius: 10%;
+    opacity: 0;
+    animation: slideRight 0.7s ease forwards;
+    animation-delay: .7s;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.profil-content {
+    padding-left: 10rem;
+}
+
+.profil-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.profil-content h3 {
+    font-size: 2.6rem;
+}
+
+.profil-content p {
+    font-size: 1.8rem;
+    margin: 2rem 0 3rem;
+}
